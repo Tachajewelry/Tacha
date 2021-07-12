@@ -95,11 +95,11 @@ window.onscroll = () => {
 	}
 		// show girls
 		
-		else if(window.scrollY > 3000 && window.scrollY < 3500 ) {
+		else if(window.scrollY > 3000 && window.scrollY < 3700 ) {
 		
 			document.querySelector(".girl2").style.WebkitAnimationPlayState= "running";
 	}
-		else if(window.scrollY > 3500 && window.scrollY < 4000 ) {
+		else if(window.scrollY > 3700 && window.scrollY < 4000 ) {
 		
 			document.querySelector(".girl3").style.WebkitAnimationPlayState= "running";
 	}
