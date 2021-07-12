@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<title>home</title>
+	
+	
+	
+	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+	
+	
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	
+		
+<!-- soret el mawke3 -->
+	
+	<!-- <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon"> -->
+	
+	<!-- jQuery and Ajax-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!--	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> -->
+	
+	<!-- for fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,900;1,600;1,700&display=swap" rel="stylesheet">
+	
+	
+	<link rel="stylesheet" href="css/style.css">
+	
+	<script type="text/javascript" src="script/myscript.js"></script>
+	
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	
+	
+
+	</head>
+
+<body onload="showLoading();">
+	<!-- onload -->
+	<div class="loading">
+		<img class="loadingImage" src="./images/logo2.png" alt=""/>
+		<br>
+		<img id="logoLoading" src="./images/logo.png" alt=""/>
+	</div>
+	
+	<div class="allBody">
+		
+		<!-- the cursor -->
+		
+		
+	<!-- header -->
+	<header class="header">
+		
+		<div>
+		
+			<ul class="nav">
+			<li> <hr> <a href="Dahab.html">   Home</a></li>
+			<li> <hr> <a href="DahabAbout.html">  About Us</a></li>
+			<li> <hr> <a href="DahabProducts.html">  Collections</a></li>
+	
+			</ul>
+			
+		</div>
+	
+	
+	<!-- logo -->
+		<div>
+			<img onclick="window.location.href='Dahab.html'" id="logoPrincipal" src="./images/logo2.png" alt=""/>
+		<img onclick="window.location.href='Dahab.html'" id="logo" src="./images/logo.png" alt=""/>
+		</div>
+		
+		
+		<!-- burger -->
+		<div>
+		<i onclick="showBurger1();" id="burger1" class="fas fa-bars"></i>
+		<i onclick="showBurger2();" id="burger2" class="fas fa-bars"></i>
+			
+			<!-- close -->
+		
+		<i onclick="hideBurger2();" id="close2" class="fas fa-times"></i>
+			</div>
+		
+		<!-- inside burger 2 -->
+		
+		<div class="inside-burger2">
+			
+			<!--<ul> -->
+			<li onclick="window.location.href='Dahab.html'" class="burgerHome"><a href="Dahab.html">Home</a>  </li>
+			<li onclick="showInAbout();" class="burgerAbout"><a>About</a>  <i class="fas fa-sort-down"></i>
+			<!-- inside about -->
+			
+				<li onclick="window.location.href='DahabAbout.html'" class="burgerOurStory"><a href="">Our Story</a>  
+			<!--	<li onclick="window.location.href='DahabProducts.html'" class="burgerOurMaterials"><a href="">Collections</a> -->
+				<li onclick="window.location.href='DahabContact.html'" class="burgerContactUs"><a href="">Contact Us</a>
+		
+			</li>
+			<li onclick="window.location.href='DahabProducts.html'" class="burgerCollection"><a>Collection</a> </li>
+			
+			<!-- <li onclick="window.location.href='DahabDeleivery.html'" class="burgerDeleivery"><a href="">Delivery</a>  -->
+			<!--	<li class="burgerFaq"><a href="">Faq</a>  -->
+			
+		
+		</div>
+		
+	
+	</header>
+	
+	<!-- section 1 -->
+	<section class="finest">
+		
+		<div>
+		<h1 onclick="karim2();">The Ultimate<br> Compliment.</h1>
+			<!-- <h3>Your creative touch </h3> -->
+			 <button onclick="window.location.href='DahabProducts.html'" > <hr> <h4> Explore Now </h4> </button>  <!-- onclick="window.location.href='DahabProducts.html'" -->
+			
+		</div>
+	
+		
+		<img src="./images/girl1.webp" alt=""/>
+		
+	</section>
+	
+	<!-- section 2 -->
+	<section class="story">
+		<img class="logo2" src="./images/logo2.png" alt=""/>
+	<h1 class="jewelery">jewelery</h1>
+		<p>A modern woman requires a modern touch through a self artistic compliment.</p>
+		<div onclick="window.location.href='DahabAbout.html'" class="ourStory"><h3>Our <br> Story </h3></div>
+	<h1 class="selection">selection</h1>	
+	</section>
+	
+	<!-- section 3 -->
+	<section class="products">
+		<h2>Collection:</h2>
+		<div class="materials1">
+			
+		<article class="elementHome1">
+          <img class="im" onclick="showProduct(this.src, 'Product name 1', 'kkkkkkkkkkkkk1kkkkkkkkkkkkk1kkkkkkkkkkkkk1kkkkkkkkkkkkk1kkkkkkkkkkkkk1');" src="./images/product.jpg" alt=""/> 
+			<h4>Splach golden <br> <label>golden.necklaces</label></h4>
+			<h4>$369.00</h4>
+			</article>
+			
+			<article class="elementHome2">
+			<img class="im" onclick="showProduct(this.src, 'Product name 2', 'kkkkkkkkkkkkk2');" src="./images/product.jpg" alt=""/> 
+			<h4>Splach golden <br> <label>golden.necklaces</label></h4>
+			<h4>$369.00</h4>
+			</article>
+			
+			<article class="elementHome3">
+			<img class="im" onclick="showProduct(this.src, 'Product name 3', 'kkkkkkkkkkkkk3');" src="./images/product.jpg" alt=""/> 
+			<h4>Splach golden <br> <label>golden.necklaces</label></h4>
+			<h4>$369.00</h4>
+			</article>
+			
+			<article class="elementHome4">
+			<img class="im" onclick="showProduct(this.src, 'Product name 4', 'kkkkkkkkkkkkk4');" src="./images/product.jpg" alt=""/> 
+			<h4>Splach golden <br> <label>golden.necklaces</label></h4>
+			<h4>$369.00</h4>
+			</article>
+		
+		</div>
+		
+		<div class="more">
+		
+		<button onclick="window.location.href='DahabProducts.html'"><hr> <h4>Show more</h4></button>
+				
+		</div>
+		
+		<!--
+		
+		<div class="materials2">
+			
+		<article>
+			<img src="./images/product.jpg" alt=""/>
+			<h4>Splach golden <br> <label>golden.necklaces</label></h4>
+			<h4>$369.00</h4>
+			</article>
+			
+			<article>
+			<img src="./images/product.jpg" alt=""/>
+			<h4>Splach golden <br> <label>golden.necklaces</label></h4>
+			<h4>$369.00</h4>
+			</article>
+			
+			<article>
+			<img src="./images/product.jpg" alt=""/>
+			<h4>Splach golden <br> <label>golden.necklaces</label></h4>
+			<h4>$369.00</h4>
+			</article>
+			
+			<article>
+			<img src="./images/product.jpg" alt=""/>
+			<h4>Splach golden <br> <label>golden.necklaces</label></h4>
+			<h4>$369.00</h4>
+			</article>
+		
+		</div> -->
+	</section>
+	
+	<!-- section 4 -->
+	<section class="antique">
+		<div class="image1">  
+	<img class="girl2" src="./images/girl2.jpg" alt=""/>
+		</div> 
+			
+		
+		<div>
+		<h1>Your Tacha <br> anytime, anywhere.</h1>
+			<h3>Any occasion. Complemented feeling. </h3>
+			<button onclick="window.location.href='DahabProducts.html'"> <hr> <h4>Discover</h4></button>
+		</div>
+		
+		
+	</section>
+	
+	<!-- section 5 -->
+	
+	<section class="perfect">
+		<div class="image2"> 
+	<img class="girl3" src="./images/girl3.jpg" alt=""/>
+		</div> 
+			
+		
+		<div>
+		<h1>Perfect Match <br> for Every Occasion.</h1>
+			<h3>Coordinate with other pieces, <br> for the ultimate Tacha look.</h3>
+			<button onclick="window.location.href='DahabProducts.html'"> <hr> <h4>Discover the set</h4></button>
+		</div>
+		
+		
+	</section>
+	
+	<!-- footer -->
+	<footer>
+	<section>
+		<img onclick="window.location.href='Dahab.html'" id="logo" src="./images/logo.png" alt=""/>
+		</section>
+		
+		<section>
+		<div>
+			<ul>
+				<li class="first"><a><strong>About</strong></a></li>
+			<li><a href="DahabAbout.html">Our story</a></li>
+			<li><a href="DahabProducts.html">Our products</a></li>
+			<li><a href="DahabContact.html">Contact us</a></li> 
+			<!--	<li><a href="DahabDeleivery.html">Delivery</a></li> -->
+			</ul>
+			</div>
+			
+		<!--	<div>
+			<ul>
+				<li class="first"><a href=""><strong>Store</strong></a></li>
+			<li><a href="">Our story</a></li>
+			<li><a href="">Our materials</a></li>
+			<li><a href="">Contact us</a></li>
+			</ul>
+			</div>
+			
+			<div>
+			<ul>
+				<li class="first"><a href=""><strong>Care</strong></a></li>
+			<li><a href="DahabDeleivery.html">deleivery</a></li>
+			<li><a href="">fac</a></li>
+			</ul>
+			</div> -->
+			
+		</section>
+		
+		<section>
+		<i class="fab fa-facebook"></i>
+			<i class="fab fa-instagram"></i>
+		</section>
+		
+		<section>
+		<h4>Copyright © 2021 Tacha Themes. All rights reserved.</h4>
+		</section>
+		
+	</footer>
+	
+	<br>
+		
+		</div>
+	
+	
+	
+	<div class="inside-burger1">
+		<article>
+	<img src="./images/girl4.jpg" alt=""/>
+			<div>
+			<i class="fab fa-facebook"></i>
+			<i class="fab fa-instagram"></i>
+		
+				</div>
+				
+		</article>
+		
+		<article>
+		<img onclick="window.location.href='Dahab.html'" id="logo" src="./images/logo2.png" alt=""/>
+			<h1 onclick="window.location.href='DahabAbout.html'">Story</h1>
+			<h1 onclick="window.location.href='DahabProducts.html'">Materials</h1>
+			<div>
+			<ul>
+				<li><a href="Dahab.html">Home</a></li>
+				<li><a href="DahabContact.html">Contact</a></li>
+				</ul>
+				
+				<ul>
+				<li><a href="DahabAbout.html">About</a></li>
+				<li><a href="DahabProducts.html">Products</a></li>
+				</ul>
+			</div>
+		</article>
+		
+	<i onclick="hideBurger1();" id="close1" class="fas fa-times"></i>
+	</div>
+	
+	
+	<!-- <form id="javascript_form">
+    <input type="text" name="subject" placeholder="Subject" />
+    <textarea name="text" placeholder="Message"></textarea>
+    <input type="submit" id="js_send" value="Send" />
+</form> -->
+	
+	<!-- arrow for get on top -->
+	<i onclick="scrollToTop();" id="arrow-button" class="fas fa-chevron-up"></i>
+	
+		<script src="https://kit.fontawesome.com/682febeeb9.js" crossorigin="anonymous"></script> 
+	
+
+     
+<!-- optional, prevents the submit button from being pressed more than once -->
+	
+	 
+    <!--
+<script>
+	function mimi12() {
+		document.body.style.backgroundColor = "red";
+		window.history.pushState('DahabContact', 'Contact', 'DahabContact.html');
+	// history.js
+
+		
+		//window.history.replaceState(null, "Contact", "DahabContact.html");
+	/*	window.history.pushState(currentUrl + "&hospitalIds[" + (filters.Hospitals.length - 1) + "]=" + hospitalId);
+ window.history.pushState('DahabContact', 'Contact', 'DahabContact.html'); */
+		}
+</script>  -->
+	
+	</body>
+</html>
