@@ -417,8 +417,8 @@ var mq = window.matchMedia("(max-width: 950px)");
 	h2.style.color  = "white";
 	
 	// h3
-	h3.innerHTML = "descreption";
-	h3.style.marginTop = "100px";
+	h3.innerHTML = "";
+	h3.style.marginTop = "10px";
 	h3.style.textDecoration = "underline";
 	h3.style.color  = "white";
 	h3.style.fontSize  = "35px";
@@ -467,17 +467,16 @@ var mq = window.matchMedia("(max-width: 950px)");
 		}, 500)
 		
 		
-	
+	// close div onclick on the body
 		
-		
-	/*	for(i = 0; i < x.length; i++) {
-		
-		//if(document.querySelector(".divInsideProduct").style.display == "flex"){
-        x[i].onclick = true;
-			
-	} */
 	
+	}
 	
+
+	
+	div1.onclick = (e) =>{
+		e.stopPropagation();
+		
 	}
 	
 	//document.querySelector(".restBody").appendChild(div1);
@@ -495,6 +494,8 @@ var mq = window.matchMedia("(max-width: 950px)");
 	button.appendChild(h4);
 		
 		//}
+		
+		
 	
 	// not clicking another one
 /*	var i,
@@ -569,53 +570,22 @@ var mq = window.matchMedia("(max-width: 950px)");
 } 
 
 
+	// show circle cursor
+$("html").on("mousemove", function(e) { 
+	
+	$(".circle-cursor").show(2000).offset({
+		
+		left: e.pageX,
+		top: e.pageY
+	});
+});
 
-/*
-const nextURL = 'DahabContact.html';
-const nextTitle = 'Dahab Contact';
-const nextState = { additionalInformation: 'Dahab.html' };  */
-	
-function karim2() {
-		window.history.pushState('DahabContact', 'Contact', 'DahabContact.html');
-	history.replaceState(document.url, "", "?file:///D:/dahab/DahabContact2.html");
-	
-	
-/*
-	window.history.pushState('', 'New Page Title', '?new-url.php');
-	window.history.replaceState({}, '','/DahabContact.html');
-	window.history.pushState('', 'New Page Title', '/new-url.php');
-	window.history.pushState('DahabContact', 'Contact', 'DahabContact.html'); */
-	
-	
-	}
 
 // select product 
-function selectProduct() {
-	//window.onscroll() => {
-	//document.querySelector(".selectProducts").value = "item5";
-	//if(window.location.href == "DahabContact.html") {
-	//document.body.style.backgroundColor = "red";
-	document.querySelector(".selectProducts").value = "item5";
-	//}
-	//setInterval(selectProduct, 5);
-	//}
-		//}
-}
 
 
 // on button inquery click on the div of the product
-function kim() {
-	setInterval(selectProduct, 5);
-}
-// choose product
-function chooseProduct() {
-	
 
-	setInterval(selectProduct, 5); 
-	
-}
-
-	
 
 
 function processAjaxData(response, urlPath){
@@ -638,3 +608,42 @@ function scrollToTop() {
 	"use strict";
 	window.scrollTo({ top: 0, behavior: 'smooth' });
 }
+
+// show product color when select some product only
+$(function(){
+$(".selectProducts").on("change", function(){
+switch($(this).val()){
+		
+	case "item6":
+	$(".products-color-fiora").show();
+		$(".products-color-stud").hide();
+		break;
+	case "item7":
+	$(".products-color-stud").show();
+		$(".products-color-fiora").hide();
+		break;
+	default:
+	$(".products-color-fiora").hide();
+	$(".products-color-stud").hide();
+		break;
+}
+})
+	
+	$(".selectProducts2").on("change", function(){
+switch($(this).val()){
+		
+	case "item6":
+	$(".products-color-fiora-optional").show();
+	$(".products-color-stud-optional").hide();
+		break;
+	case "item7":
+	$(".products-color-stud-optional").show();
+	$(".products-color-fiora-optional").hide();
+		break;
+	default:
+	$(".products-color-fiora-optional").hide();
+	$(".products-color-stud-optional").hide();
+		break;
+}
+})
+})
