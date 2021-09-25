@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<title>Delivery</title>
+	
+	
+	
+	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+	
+	
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1"> 
+	
+		
+<!-- soret el mawke3 -->
+	
+	<!-- <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon"> -->
+	
+	
+	<!-- for fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,900;1,600;1,700&display=swap" rel="stylesheet">
+	
+	
+	<link rel="stylesheet" href="css/style.css">
+	
+	<script type="text/javascript" src="script/myscript.js"></script>
+	
+		<!-- jQuery -->
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	</head>
+
+<body onload="showLoading();">
+	
+	<!-- circle cursor -->
+	<div class="circle-cursor">
+	</div>
+	<!-- onload -->
+	<div class="loading">
+		<img class="loadingImage" src="./images/logo2.png" alt=""/>
+		<br>
+		<img id="logoLoading" src="./images/logo.png" alt=""/>
+	</div>
+	
+	<div class="allBody">
+	<!-- header -->
+	<header class="header">
+		
+		<div>
+		
+			<ul class="nav">
+			<li> <hr> <a href="Dahab.html">   Home</a></li>
+			<li> <hr> <a href="DahabAbout.html">  About Us</a></li>
+			<li> <hr> <a href="DahabProducts.html">  Collections</a></li>
+	
+			</ul>
+			
+		</div>
+	
+	
+	<!-- logo -->
+		<div>
+			<img onclick="window.location.href='Dahab.html'" id="logoPrincipal" src="./images/logo2.png" alt=""/>
+		<img onclick="window.location.href='Dahab.html'" id="logo" src="./images/logo.png" alt=""/>
+		</div>
+	
+
+	
+		
+		
+		
+		
+		<!-- burger -->
+		<div>
+		<i onclick="showBurger1();" id="burger1" class="fas fa-bars"></i>
+		<i onclick="showBurger2();" id="burger2" class="fas fa-bars"></i>
+			
+			<!-- close -->
+		
+		<i onclick="hideBurger2();" id="close2" class="fas fa-times"></i>
+			</div>
+		
+		
+		<!-- inside burger 2 -->
+		
+		<div class="inside-burger2">
+			
+			<!--<ul> -->
+			<li onclick="window.location.href='Dahab.html'" class="burgerHome"><a href="Dahab.html">Home</a>  </li>
+			<li onclick="showInAbout();" class="burgerAbout"><a>About</a>  <i class="fas fa-sort-down"></i>
+			<!-- inside about -->
+			
+				<li onclick="window.location.href='DahabAbout.html'" class="burgerOurStory"><a href="">Our Story</a>  
+			<!--	<li onclick="window.location.href='DahabProducts.html'" class="burgerOurMaterials"><a href="">Collections</a> -->
+				<li onclick="window.location.href='DahabContact.html'" class="burgerContactUs"><a href="">Contact Us</a>
+		
+			</li>
+			<li onclick="window.location.href='DahabProducts.html'" class="burgerCollection"><a>Collection</a> </li>
+			
+			<!-- <li onclick="window.location.href='DahabDeleivery.html'" class="burgerDeleivery"><a href="">Delivery</a>  -->
+			<!--	<li class="burgerFaq"><a href="">Faq</a>  -->
+			
+		
+		</div>
+		
+	
+	</header>
+	
+	<!-- section 1 -->
+	
+		<section class="deleivery">
+		<h1>Delivery</h1>
+			<img src="./images/deleivery1.jpg" alt=""/>
+		</section>
+		
+		<!-- section 2 -->
+		<section class="shipped">
+		<img class="imageBrac1" src="./images/deleivery2.jpg" alt=""/>
+			
+			<div>
+			<h3>Shipped Within 24 Hours</h3>
+				<p>Through a customizable jewlry line that is crafted with the finest materials. An earring becomes a necklace and a necklace becomes a collection of artistic statements. Tacha matches your mood anytime no matter where you are.</p>
+			</div>
+		</section>
+		
+		<!-- section 3 -->
+	<!--	<section class="free">
+			
+			<img class="imageBrac2" src="./images/deleivery3.jpg" alt=""/>
+			
+		<div>
+			<h3>Free Shipping</h3>
+			<p>Our online store now offers free 3-5 day shipping for US domestic addresses only, regardless of what you order. Orders will be shipped within 24 hours from the moment of ordering and could take up to 5 business days to be delivered.</p>
+			</div>
+			
+		</section> -->
+		
+		<!-- section 4 -->
+		<section class="fill">
+		<h2>Reach out </h2>
+			<div>
+			<h4>Your name</h4>
+				<input type="text"/>
+				
+				<h4>Your email</h4>
+				<input type="text"/>
+				
+				<h4>Your number</h4>
+				<input type="text"/>
+				
+				<h4>Your message</h4>
+				<input type="text"/>
+				
+				<button> <hr> <h4>Inquiry</h4></button>
+			</div>
+		</section>
+		
+		
+	<!-- footer -->
+	<footer class="footer2">
+	<section>
+		<img onclick="window.location.href='Dahab.html'" id="logo" src="./images/logo.png" alt=""/>
+		</section>
+		
+		<section>
+		<div>
+			<ul>
+				<li class="first"><a><strong>About</strong></a></li>
+			<li><a href="DahabAbout.html">Our story</a></li>
+				<li><a href="DahabProducts.html">Our Products</a></li>
+			<li><a href="DahabContact.html">Contact us</a></li>
+				<!-- <li><a href="DahabDeleivery.html">Delivery</a></li> -->
+			</ul>
+			</div>
+			
+		<!--	<div>
+			<ul>
+				<li class="first"><a href=""><strong>Store</strong></a></li>
+			<li><a href="">Our materials</a></li>
+			<li><a href="">Contact us</a></li>
+			</ul>
+			</div>
+			
+			<div>
+			<ul>
+				<li class="first"><a><strong>Care</strong></a></li>
+			<li><a href="DahabDeleivery.html">delivery</a></li>
+			<li><a href="">fac</a></li>
+			</ul>
+			</div>  -->
+			
+		</section>
+		
+		<section>
+		<i class="fab fa-facebook"></i>
+			<i class="fab fa-instagram"></i>
+		</section>
+		
+		<section>
+		<h4>Copyright © 2021 Tacha Themes. All rights reserved.</h4>
+		</section>
+		
+	</footer>
+	
+	<br>
+		
+		</div>
+	
+	
+	<div class="inside-burger1">
+		<article>
+	<img src="./images/girl4.jpg" alt=""/>
+			<div>
+			<i class="fab fa-facebook"></i>
+			<i class="fab fa-instagram"></i>
+				</div>
+				
+		</article>
+		
+		<article>
+		<img onclick="window.location.href='Dahab.html'" id="logo" src="./images/logo2.png" alt=""/>
+			<h1 onclick="window.location.href='DahabAbout.html'">Story</h1>
+			<h1 onclick="window.location.href='DahabProducts.html'">Materials</h1>
+			<div>
+			<ul>
+				<li><a href="Dahab.html">Home</a></li>
+				<li><a href="DahabContact.html">Contact</a></li>
+				</ul>
+				
+				<ul>
+				<li><a href="DahabAbout.html">About</a></li>
+				<li><a href="DahabProducts.html">Products</a></li>
+				</ul>
+			</div>
+		</article>
+		
+	<i onclick="hideBurger1();" id="close1" class="fas fa-times"></i>
+	</div>
+	
+	
+	
+	<!-- arrow for get on top -->
+	<i onclick="scrollToTop();" id="arrow-button" class="fas fa-chevron-up"></i>
+	
+		<script src="https://kit.fontawesome.com/682febeeb9.js" crossorigin="anonymous"></script> 
+	
+	<script>
+	
+	// show inside burger 2 in page 2
+function showBurger2() {
+	// bg of the first element on burger 2 
+	document.querySelector(".burgerDeleivery").classList.add("clickedInsideBurger");
+	/*document.querySelector(".burgerAbout").classList.remove("clickedInsideBurger");
+	document.querySelector(".burgerCustomeCare").classList.remove("clickedInsideBurger"); */
+	
+	document.querySelector(".inside-burger2").style.display = "block";
+	document.getElementById("close2").style.display = "block";
+	document.getElementById("burger2").style.display = "none";
+	document.querySelector(".inside-burger2").classList.remove("hide-inside-burger2");
+}
+	</script>
+	
+	
+    
+	</body>
+</html>
